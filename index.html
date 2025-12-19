@@ -80,6 +80,20 @@
       This tool focuses on predictable layouts, local processing, and simple control.
     </p>
 
+    <h2>How it works</h2>
+    <p>
+      <pre id="markdown-content"></pre>
+
+      <script>
+      fetch('HOW_IT_WORKS.md')
+        .then(response => response.text())
+        .then(text => {
+          document.getElementById('markdown-content').textContent = text;
+        });
+      </script>
+
+    </p>
+
     <div class="cta">
       <p>
         Download, pricing, and license details:
