@@ -83,16 +83,15 @@
     
     <h2>How it works</h2>
     <p>
-            <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-      <article id="markdown-content"></article>
+        <pre id="markdown-content"></pre>
       
       <script>
       fetch('HOW_IT_WORKS.md')
         .then(response => response.text())
         .then(text => {
-          document.getElementById('markdown-content').innerHTML = marked.parse(text);
+          document.getElementById('markdown-content').textContent = text;
         });
-      </script>
+      </script>     
     </p>
 
     <div class="cta">
